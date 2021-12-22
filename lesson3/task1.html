@@ -1,0 +1,17 @@
+<head>
+    <script>	
+        var numbers = 2;
+        while (numbers <= 100) {
+            var check = true;
+            for (var i = 2; i < numbers; i++){
+                if (numbers%i === 0) {
+                    check = false;
+                    break;
+                }
+            }
+            if (check) console.log(numbers);
+            numbers++;
+        }
+	
+</script>
+    </head>

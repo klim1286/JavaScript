@@ -1,0 +1,35 @@
+<head>
+    <script>	
+        var cart = [
+            {
+                product: "i3",
+                price: 15000 ,
+            },
+            {
+                product: "nvidia",
+                price: 10000,
+            },
+            {
+                product: "mainboard",
+                price: 5700
+            },
+            {
+                product: "frame",
+                price: 3500
+            }
+        ]
+
+
+        function countCartPrice(cart) {
+            var cost = 0;
+            for (var prod of cart){
+                cost += prod.price
+            }
+            return cost
+        }
+
+        console.log("Стоимость корзины: " + countCartPrice(cart))
+
+	
+</script>
+    </head>
