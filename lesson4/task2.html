@@ -1,0 +1,42 @@
+<head>
+    <script>
+var cart = ["CPU", "video", "mainboard", "frame"]
+			
+            var CPU = {
+                product: "i3",
+				type: "box",
+				GHz: "2,9",
+                price: 15000,
+            }
+
+            var video = {
+                name: "nvidia",
+				ram: 2,
+                price: 10000,
+            }
+
+            var mainboard = {
+				model: "H110M-S2",
+				rev: 2,
+                price: 5700
+            }
+
+			var frame = {
+				product: "frame",
+				color: "black",
+				form: "ATX",
+                price: 3500
+            }
+
+
+        function countCartPrice() {
+            var cost = 0;
+                cost = CPU.price + video.price + mainboard.price + frame.price
+            return cost
+        }
+
+        console.log("Стоимость корзины: " + countCartPrice())
+
+	
+</script>
+    </head>

@@ -1,0 +1,28 @@
+<html>
+<body>
+  
+    <script> 
+function numInObject(num){
+	if(num > 999){
+		console.log('Ошибка: число больше 999')
+	  var object = {}
+	  return object
+	} else {
+		var digits=['единицы','десятки','сотни']
+	  var object={}
+	  var i = 0
+	  for(var i=0; num!=0; i++){
+	  	object[digits[i]]=num % 10
+	  	num = (num - num % 10) / 10
+		}
+		}	
+		return object
+	}
+console.log(numInObject(9999));
+console.log(numInObject(158));
+console.log(numInObject(46));
+console.log(numInObject(2));
+
+    </script>
+</body>
+</html>
